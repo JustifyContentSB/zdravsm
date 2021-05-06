@@ -1,0 +1,20 @@
+.features {
+  font-size: 16px;
+  line-height: 20px;
+  &__item:nth-child(odd) .features__text {
+    background: $textBg;
+  }
+  &__about {
+    padding: 12px 30px;
+    text-align: center;
+    span {
+      font-family: 'Lobster';
+    }
+  }
+  &__text {
+    padding: 18px 30px 25px;
+    span {
+      font-family: 'Lobster';
+    }
+  }
+}

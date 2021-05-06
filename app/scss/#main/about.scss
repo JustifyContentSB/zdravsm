@@ -1,0 +1,32 @@
+.about {
+  padding: 85px 10px 7px 10px;
+  position: relative;
+  &__leaves {
+    &-mob {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  &__list {
+    margin-top: 50px;
+  }
+  &__item {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__img {
+    margin-right: 20px;
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &__text {
+    width: calc(100% - 107px);
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

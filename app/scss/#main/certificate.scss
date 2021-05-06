@@ -1,0 +1,15 @@
+.certificate {
+  padding: 35px 30px 50px;
+  background: url('../../images/certificate/certificate-mob-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__text {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+  &__img {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,137 @@
+.header {
+  &__top {
+    padding: 28px 30px 20px;
+    display: flex;
+    align-items: center;
+    &-inner {
+      max-width: 200px;
+    }
+  }
+  &__burger {
+    display: block;
+    margin-right: 25px;
+    width: 24px;
+    height: 18px;
+    position: relative;
+    span {
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: #000;
+      border-radius: 3px;
+      &:nth-child(1) {
+        top: 0;
+        left: 0;
+      }
+      &:nth-child(2) {
+        top: 50%;
+        left: 0;
+        transform: translateY(-1px);
+      }
+      &:nth-child(3) {
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+  &__logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    font-family: 'Lobster';
+    font-size: 26px;
+    line-height: 44px;
+    color: #14A500;
+    span {
+      color: #F8AF34;
+    }
+  }
+  &__descr {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    font-family: 'Roboto', sans-serif;
+  }
+  &__title {
+    max-width: 266px;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $accent;
+    position: relative;
+    z-index: 2;
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      filter: blur(22px);
+    }
+  }
+  &__info {
+    min-height: 448px;
+    padding-top: 25px;
+    position: relative;
+  }
+  &__girl {
+    &-mob {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  &__green {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+  &__gold {
+    width: 175px;
+    position: absolute;
+    z-index: 2;
+    bottom: 15px;
+    right: 15px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #fff;
+    span {
+      display: inline-block;
+      margin-top: 2px;
+      padding: 2px 10px;
+      background: $pink;
+      border-radius: 6px;
+    }
+  }
+  &__coupon {
+    &-mob {
+      width: 150px;
+      position: absolute;
+      z-index: 2;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &__stock {
+    position: absolute;
+    z-index: 2;
+    bottom: 75px;
+    right: 40px;
+  }
+  &__orsofit {
+    &-mob {
+      position: absolute;
+      right: 0;
+      top: 110px;
+    }
+  }
+}
