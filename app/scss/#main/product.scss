@@ -1,10 +1,10 @@
 .product {
-  padding: 30px;
-  padding-bottom: 60px;
+  padding: 30px 10px 75px;
   background: $textBg;
   &__text {
     margin-top: 20px;
     text-align: center;
+    line-height: 20px;
   }
   &__img {
     width: 100%;
@@ -13,5 +13,46 @@
     margin-top: 20px;
     border-radius: 10px;
     overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .product {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .product {
+    &__inner {
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__text {
+      margin: 0;
+      padding-right: 20px;
+      max-width: 420px;
+      text-align: left;
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__img {
+      min-width: 300px;
+      margin: 0;
+      margin-left: 80px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .product {
+    padding-top: 45px;
+    &__img {
+      width: 431px;
+      min-width: 431px;
+    }
   }
 }

@@ -1,0 +1,39 @@
+.footer {
+  padding: 10px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #050211;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  &__copyright {
+    margin-bottom: 15px;
+  }
+  &__link {
+    position: relative;
+    &:hover,
+    &:focus {
+      &::after {
+        display: none;
+      }
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 1px;
+      background: #000;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    align-items: center;
+    &__copyright {
+      text-align: center;
+    }
+  }
+}

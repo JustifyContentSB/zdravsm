@@ -1,7 +1,72 @@
 .careful {
-  padding: 30px 30px 10px;
+  padding: 30px 10px 10px;
   &__text {
     margin-top: 20px;
     text-align: center;
+  }
+  &__img {
+    max-width: 246px;
+    margin: 0 auto;
+    position: relative;
+    &-desktop {
+      display: none;
+    }
+    &-stop {
+      position: absolute;
+      bottom: 35px;
+      right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .careful {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .careful {
+    &__inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    &__img {
+      margin: 0;
+    }
+    &__text {
+      max-width: 420px;
+      margin: 0;
+      margin-left: 20px;
+      order: 1;
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .careful {
+    &__text {
+      max-width: 470px;
+      margin-left: 70px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__img {
+      max-width: 346px;
+      &-stop {
+        width: 113px;
+        bottom: 60px;
+      }
+      &-mob {
+        display: none;
+      }
+      &-desktop {
+        display: block;
+      }
+    }
   }
 }

@@ -21,6 +21,7 @@
   }
   &__img {
     width: 87px;
+    min-width: 87px;
     height: 87px;
     margin-left: 17px;
     border-radius: 50%;
@@ -45,7 +46,71 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    background: $btnBg;
+    background: $pink;
     border-radius: 19px;
+    transition: $transition;
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .orsofit {
+    &__item {
+      padding: 3px 5px 3px 35px;
+    }
+    &__text {
+      width: 150px;
+      margin-left: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .orsofit {
+    &__list {
+      padding: 0 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__item {
+      width: calc(50% - 5px);
+      max-width: 476px;
+      margin-bottom: 10px;
+      box-shadow: 0px 4px 12px rgba(210, 210, 210, 0.25);
+      border-radius: 25px;
+      &:nth-child(odd) {
+        margin-right: 10px;
+      }
+    }
+    &__btn {
+      margin-top: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .orsofit {
+    &__img {
+      margin-right: 48px;
+    }
+    &__text {
+      margin-left: 0;
+      font-weight: 700;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .orsofit {
+    &__item {
+      margin-bottom: 23px;
+      &:nth-child(odd) {
+        margin-right: 40px;
+      }
+    }
   }
 }

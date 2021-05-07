@@ -1,0 +1,151 @@
+.participate {
+  padding: 35px 10px 40px;
+  &__guide {
+    margin-top: 25px;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: calc(50% - 5px);
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    &:nth-child(odd) {
+      margin-right: 10px;
+    }
+    &--checked {
+      .participate__num {
+        color: #D0D0D0;
+      }
+      .participate__box {
+        background: #F0F0F0;
+        &::after {
+          content: '';
+          position: absolute;
+          top: 14px;
+          right: 14px;
+          z-index: 1;
+          width: 25px;
+          height: 21px;
+          background: url('../../images/participate/check.svg');
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+  }
+  &__num {
+    font-size: 64px;
+    line-height: 78px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #FEAB5D;
+    font-weight: bold;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    &--win {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+  &__box {
+    flex-grow: 1;
+    min-height: 192px;
+    padding-top: 24px;
+    padding-bottom: 10px;
+    background: $textBg;
+    border-radius: 20px;
+    position: relative;
+  }
+  &__img {
+    width: 109px;
+    height: 102px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__note {
+    max-width: 782px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+  &__email {
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    a {
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 1px;
+        background: #000;
+        transition: $transition;
+      }
+      &:hover,
+      &:focus {
+        &::after {
+          width: 100%;
+          right: auto;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .participate {
+    &__title {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__item {
+      width: 239px;
+      min-width: 239px;
+      margin-right: 15px;
+      &:nth-child(odd) {
+        margin-right: 15px;
+      }
+      &:nth-child(5n) {
+        margin-right: 0;
+      }
+      &-order img {
+        width: 90px;
+      }
+      &-manager img {
+        width: 117px;
+      }
+      &-give img {
+        width: 139px;
+      }
+      &-gold img {
+        width: 177px;
+      }
+      &-money img {
+        width: 110px;
+      }
+    }
+    &__img {
+      width: 194px;
+      height: 144px;
+    }
+  }
+}

@@ -7,30 +7,41 @@
     <title>ЗдравСмарт</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600;700&family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;500;600;700&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="js/slick/slick.css" />
     <link rel="stylesheet" href="css/index/style.min.css" />
   </head>
 
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header__top">
-          <a class="header__burger" href="#">
-            <span></span>
-            <span></span>
-            <span></span>
-          </a>
-          <div class="header__top-inner">
-            <a class="header__logo" href="#"
-              >Здрав<span>Смарт</span
-              ><img src="images/icons/leaves.svg" alt="logo"
-            /></a>
-            <p class="header__descr">
-              Натуральные биологические активаторы для повышения уровня вашего
-              здоровья
-            </p>
+        <div class="header__top-wrapper">
+          <div class="header__top">
+            <a class="header__burger" href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+            <nav class="header__nav">
+              <ul class="header__list">
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Наша продукция</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Розыгрыш</a></li>
+              </ul>
+            </nav>
+            <div class="header__top-inner">
+              <a class="header__logo" href="#"
+                >Здрав<span>Смарт</span
+                ><img src="images/icons/leaves.svg" alt="logo"
+              /></a>
+              <p class="header__descr">
+                Натуральные биологические активаторы для повышения уровня вашего
+                здоровья
+              </p>
+            </div>
           </div>
         </div>
         <div class="header__info">
@@ -39,26 +50,60 @@
             src="images/header/girl-mob.png"
             alt="girl"
           />
+          <img
+            class="header__girl-desktop"
+            src="images/header/girl-desktop.png"
+            alt="girl"
+          />
           <h1 class="header__title">Сделай заказ и выиграй</h1>
           <p class="header__gold">
             В каждой 100-й посылке расположен золотой купон на сумму <br />
             <span>10 000 рублей.</span>
           </p>
           <div class="header__green">
-            <img src="images/header/header-green.png" alt="здравсмарт" />
-          </div>
-          <div class="header__coupon-mob">
             <img
-              src="images/header/coupon-mob.png"
-              alt="золотой купон 10 000 рублей"
+              class="header__green-mob"
+              src="images/header/header-green.png"
+              alt="здравсмарт"
+            />
+            <img
+              class="header__green-desktop"
+              src="images/header/header-green-desktop.png"
+              alt="здравсмарт"
             />
           </div>
+          <img
+            class="header__coupon-mob"
+            src="images/header/coupon-mob.png"
+            alt="золотой купон 10 000 рублей"
+          />
+          <img
+            class="header__coupon-desktop"
+            src="images/header/coupon-desktop.png"
+            alt="золотой купон 10 000 рублей"
+          />
           <div class="header__stock">
-            <img src="images/header/stock-mob.svg" alt="акция" />
+            <img
+              class="header__stock-mob"
+              src="images/header/stock-mob.svg"
+              alt="акция"
+            />
+            <img
+              class="header__stock-desktop"
+              src="images/header/stock-desktop.png"
+              alt="акция"
+            />
           </div>
-          <div class="header__orsofit-mob">
-            <img src="images/header/orsofit-mob.png" alt="орсофит" />
-          </div>
+          <img
+            class="header__orsofit-mob"
+            src="images/header/orsofit-mob.png"
+            alt="орсофит"
+          />
+          <img
+            class="header__orsofit-desktop"
+            src="images/header/orsofit-desktop.png"
+            alt="орсофит"
+          />
         </div>
       </header>
 
@@ -72,49 +117,46 @@
           </p>
           <ul class="features__list">
             <li class="features__item">
-              <div class="features__img">
-                <img
-                  src="images/features/features-1.jpg"
-                  alt="наши преимущества"
-                />
-              </div>
+              <div
+                class="features__img features__img-one features__img--bhb"
+              ></div>
               <p class="features__text">
-                Мы входим в десятку крупнейших производителей по России и СНГ,
-                потому что мы постоянно развиваемся, при этом сохраняя наши
-                традиции и главные ценности, -
-                <b> использование только натуральных компонентов в составе.</b>
+                <span class="features__text-inner">
+                  Мы входим в десятку крупнейших производителей по России и СНГ,
+                  потому что мы постоянно развиваемся, при этом сохраняя наши
+                  традиции и главные ценности, -
+                  <b>
+                    использование только натуральных компонентов в составе.</b
+                  >
+                </span>
               </p>
             </li>
             <li class="features__item">
-              <div class="features__img">
-                <img
-                  src="images/features/features-2.jpg"
-                  alt="наши преимущества"
-                />
-              </div>
+              <div class="features__img features__img-two"></div>
               <p class="features__text">
-                Для наших средств
-                <b>
-                  используются только экстракты растений, масел и минералов.</b
-                >
-                Именно поэтому наши продукты не только справляются со своей
-                задачей, но и оказывают положительное воздействие на организм в
-                целом.
+                <span class="features__text-inner">
+                  Для наших средств
+                  <b>
+                    используются только экстракты растений, масел и
+                    минералов.</b
+                  >
+                  Именно поэтому наши продукты не только справляются со своей
+                  задачей, но и оказывают положительное воздействие на организм
+                  в целом.
+                </span>
               </p>
             </li>
             <li class="features__item">
-              <div class="features__img">
-                <img
-                  src="images/features/features-3.jpg"
-                  alt="наши преимущества"
-                />
-              </div>
+              <div class="features__img features__img-three"></div>
+
               <p class="features__text">
-                В <span>“ФармаСмарт”</span> уже много лет работает сплоченная
-                команда профессионалов - людей, которые не просто хорошо
-                разбираются в своем деле, но и любят свою работу. Именно
-                благодаря этому из года в год нам удается занимать лидирующие
-                позиции на рынке.
+                <span class="features__text-inner">
+                  В <span class="features__text-lobster">“ФармаСмарт”</span> уже
+                  много лет работает сплоченная команда профессионалов - людей,
+                  которые не просто хорошо разбираются в своем деле, но и любят
+                  свою работу. Именно благодаря этому из года в год нам удается
+                  занимать лидирующие позиции на рынке.
+                </span>
               </p>
             </li>
           </ul>
@@ -199,6 +241,12 @@
           <div class="about__leaves-mob">
             <img src="images/about/leaves-mob.png" alt="листья" />
           </div>
+          <div class="about__leaves-desktop about__leaves-desktop--1">
+            <img src="images/about/leaves-desktop-1.png" alt="листья" />
+          </div>
+          <div class="about__leaves-desktop about__leaves-desktop--2">
+            <img src="images/about/leaves-desktop-2.png" alt="листья" />
+          </div>
         </section>
 
         <section class="product">
@@ -224,7 +272,7 @@
             <p class="certificate__text">
               Качество препарата подтверждено специальным сертификатом
               соответствия, указывающим, что наша продукция произведена с учетом
-              всех <b>норм ГОСТ.</b>
+              <b>всех норм ГОСТ.</b>
             </p>
             <div class="certificate__img">
               <img
@@ -283,13 +331,31 @@
               сайте.
             </p>
             <div class="careful__img">
-              <img src="images/careful/fake.png" alt="подделка" />
+              <img
+                class="careful__img-mob"
+                src="images/careful/fake.png"
+                alt="подделка"
+              />
+              <img
+                class="careful__img-desktop"
+                src="images/careful/fake-desktop.png"
+                alt="подделка"
+              />
+              <img
+                class="careful__img-stop"
+                src="images/careful/stop.svg"
+                alt="подделка"
+              />
             </div>
           </div>
         </section>
 
         <section class="reviews">
           <h2 class="sec-title reviews__title">Отзывы</h2>
+          <p class="reviews__hidden">
+            Ознакомьтесь с историями наших клиентов, которые уже добились
+            положительного результата после применения <b>"Орсофит".</b>
+          </p>
           <ul class="reviews__list">
             <li class="reviews__item">
               <div class="reviews__header">
@@ -303,6 +369,7 @@
               </div>
               <div class="reviews__about">
                 <p class="reviews__text">
+                  <span class="reviews__text-name">Лариса Федчик</span>
                   После рождения ребёнка столкнулась с набором веса. Врач
                   диетолог рекомендовал данный комплекс таблеток. Сразу скажу,
                   мне они помогли скинуть вес только в комплексе с физическими
@@ -312,7 +379,66 @@
                   2.7 - кг, что не может не радовать.
                 </p>
                 <div class="reviews__img">
-                  <img src="images/reviews/reviews-1.jpg" alt="похудение" />
+                  <img
+                    src="images/reviews/reviews-1.jpg"
+                    alt="похудение"
+                    width="262"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__header">
+                <div class="reviews__userpic">
+                  <img src="images/reviews/userpic-2.png" alt="Лариса Федчик" />
+                </div>
+                <div class="reviews__info">
+                  <span class="reviews__name">Владимир Раков</span>
+                  <span class="reviews__city">г. Самара</span>
+                </div>
+              </div>
+              <div class="reviews__about">
+                <p class="reviews__text reviews__text--full">
+                  <span class="reviews__text-name">Владимир Раков</span>
+                  Я склонен к полноте, сидячая работа не добавляет оптимизма
+                  похудеть, мне посоветовал таблетки орсофит врач -диетолог, в
+                  комплексе с физическими упражнениями дает благоприятный эффект
+                  на снижение веса, на глазах конечно вы таять не начнете, но
+                  пропив таблетки курсом, если соблюдать все показания к
+                  применению и конечно же не есть по ночам, можно сбросить пяток
+                  другой килограмм излишнего веса, который так мешает, стал
+                  принимать и заметил, что они тонизируют, стал лучше
+                  чувствовать себя, аппетит снижается, а еще на фоне нагрузок
+                  также не хочется есть, а это уже реальный путь к похудению,
+                  самое важное не сорваться и соблюдать диету, заниматься
+                  спортом хоть каким, главное двигаться и принимать курс лечения
+                  таблетками, все в целом даст результат, стоит попробовать.
+                </p>
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__header">
+                <div class="reviews__userpic">
+                  <img src="images/reviews/userpic-3.png" alt="Анна Жук" />
+                </div>
+                <div class="reviews__info">
+                  <span class="reviews__name">Анна Жук</span>
+                  <span class="reviews__city">г. Новосибирск</span>
+                </div>
+              </div>
+              <div class="reviews__about">
+                <p class="reviews__text">
+                  <span class="reviews__text-name">Анна Жук</span>
+                  ПОтличное средство, но пить надо обязательно курсом и лучше
+                  повторить через некоторое время, похудела на 6 кг за месяц,
+                  есть так сильно с ним не хочется.
+                </p>
+                <div class="reviews__img">
+                  <img
+                    src="images/reviews/reviews-2.jpg"
+                    alt="похудение"
+                    width="196"
+                  />
                 </div>
               </div>
             </li>
@@ -323,22 +449,102 @@
           <h2 class="raffle__title">Розыгрыш</h2>
           <div class="raffle__inner">
             <p class="raffle__text">
-              В каждой 100-й коробке находится золотой купон на сумму 10 000
-              рублей
+              В каждой 100-й коробке находится золотой купон на сумму
+              <b>10 000 рублей</b>
             </p>
-            <div class="raffle__img"></div>
+            <div class="raffle__img">
+              <img
+                class="raffle__img-mob"
+                src="images/raffle/raffle.png"
+                alt="розыгрыш"
+              />
+              <img
+                class="raffle__img-desktop"
+                src="images/raffle/raffle-desktop.png"
+                alt="розыгрыш"
+              />
+            </div>
           </div>
         </section>
 
         <section class="participate">
-          <h2 class="sec-title">Как принять участие в розышгрыше?</h2>
+          <h2 class="sec-title">Как принять участие в розыгрыше?</h2>
           <ul class="participate__guide">
-            <li class="participate__item">
+            <li
+              class="participate__item participate__item-order participate__item--checked"
+            >
               <span class="participate__num">01</span>
-              <div class="participate__descr">
-                <span class="participate__check"></span>
-                <div class="participate__img"></div>
+              <div class="participate__box">
+                <div class="participate__img">
+                  <img
+                    src="images/participate/participate-1.svg"
+                    alt="Розыгрыш"
+                  />
+                </div>
                 <h3 class="participate__title">Оформите заказ на сайте</h3>
+              </div>
+            </li>
+            <li
+              class="participate__item participate__item-manager participate__item--checked"
+            >
+              <span class="participate__num">02</span>
+              <div class="participate__box">
+                <div class="participate__img">
+                  <img
+                    src="images/participate/participate-2.svg"
+                    alt="Розыгрыш"
+                  />
+                </div>
+                <h3 class="participate__title">
+                  Подтвердите заказ у менеджера
+                </h3>
+              </div>
+            </li>
+            <li class="participate__item participate__item-give">
+              <span class="participate__num">03</span>
+              <div class="participate__box">
+                <div class="participate__img">
+                  <img
+                    src="images/participate/participate-3.svg"
+                    alt="Розыгрыш"
+                  />
+                </div>
+                <h3 class="participate__title">
+                  Получите <br />
+                  посылку
+                </h3>
+              </div>
+            </li>
+            <li class="participate__item participate__item-gold">
+              <span class="participate__num">04</span>
+              <div class="participate__box">
+                <p class="participate__title">
+                  Обнаружив внутри золотой купон,
+                </p>
+                <div class="participate__img">
+                  <img
+                    src="images/participate/participate-4.svg"
+                    alt="Розыгрыш"
+                  />
+                </div>
+                <h3 class="participate__title">
+                  Свяжитесь с нами по электронной почте
+                </h3>
+              </div>
+            </li>
+            <li class="participate__item participate__item-money">
+              <span class="participate__num">05</span>
+              <div class="participate__box">
+                <div class="participate__img">
+                  <img
+                    src="images/participate/participate-5.svg"
+                    alt="Розыгрыш"
+                  />
+                </div>
+                <h3 class="participate__title participate__title--win">
+                  Получите <br />
+                  10 000 рублей
+                </h3>
               </div>
             </li>
           </ul>
@@ -347,20 +553,25 @@
             билет, вам необходимо связаться с нашим менеджером для получения
             приза по электронной почте:
           </p>
-          <a class="participate__email" href="mailto:t8800301@yandex.ru"
-            >t8800301@yandex.ru</a
-          >
+          <p class="participate__email">
+            <a href="mailto:t8800301@yandex.ru">t8800301@yandex.ru</a>
+          </p>
         </section>
       </main>
 
       <footer class="footer">
         <p class="footer__copyright">
-          ООО "Похудение XXI" 113569, г. Москва, ул. Пресненский Вал, д.9,
-          стр.15, офис. 9а ОГРН 563216375901, ИНН 7723657256
+          ООО "Похудение XXI" <br />
+          113569, г. Москва, ул. Пресненский Вал, д.9, стр.15, офис. 9а <br />
+          ОГРН 563216375901, ИНН 7723657256
         </p>
         <a class="footer__link" href="#">Политика конфиденциальности</a>
         <a class="footer__link" href="#">Публичная оферта</a>
       </footer>
     </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

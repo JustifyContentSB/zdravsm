@@ -1,0 +1,85 @@
+.raffle {
+  padding: 35px 10px 80px;
+  background: url('../../images/raffle/raffle-bg.png') $secBg;
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  &__title {
+    max-width: 222px;
+    padding: 8px;
+    margin: 0 auto;
+    background: $pink;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    border-radius: 16px;
+  }
+  &__inner {
+    margin-top: 33px;
+  }
+  &__text {
+    max-width: 310px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  &__img {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 45px;
+    &-desktop {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .raffle {
+    &__title {
+      text-transform: uppercase;
+    }
+    &__inner {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__img {
+      margin: 0;
+      order: -1;
+      margin-right: 20px;
+    }
+    &__text {
+      margin: 0;
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .raffle {
+    padding-bottom: 40px;
+    &__inner {
+      margin-top: 0;
+    }
+    &__img {
+      max-width: 653px;
+      &-mob {
+        display: none;
+      }
+      &-desktop {
+        display: block;
+      }
+    }
+    &__text {
+      max-width: 340px;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+}

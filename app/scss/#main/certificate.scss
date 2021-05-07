@@ -1,5 +1,5 @@
 .certificate {
-  padding: 35px 30px 50px;
+  padding: 35px 10px 50px;
   background: url('../../images/certificate/certificate-mob-bg.png');
   background-position: center;
   background-size: cover;
@@ -11,5 +11,41 @@
   }
   &__img {
     margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .certificate {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .certificate {
+    background-image: url('../../images/certificate/certificate-desktop-bg.png');
+    background-size: contain;
+    background-position: right;
+    &__inner {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__img {
+      margin: 0;
+      max-width: 466px;
+      order: -1;
+    }
+    &__text {
+      max-width: 476px;
+      margin-left: 35px;
+      text-align: left;
+      font-size: 18px;
+      line-height: 22px;
+      b {
+        display: block;
+      }
+    }
   }
 }
