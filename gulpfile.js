@@ -19,7 +19,7 @@ gulp.task('script', function() {
 gulp.task('scss', function() {
     return gulp.src('app/scss/index/style.scss')
     .pipe(sass({outputStyle: 'compressed'}))
-    .pipe(autoprefixer('last 2 versions'))
+    .pipe(autoprefixer('last 5 versions'))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/css/index'))
     .pipe(browserSync.reload({stream: true}))

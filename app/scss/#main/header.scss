@@ -5,7 +5,7 @@
     position: fixed;
     z-index: 50;
     left: -100%;
-    top: 120px;
+    top: 103px;
     transition: $transition;
     &.active {
       left: 0;
@@ -35,7 +35,7 @@
     }
   }
   &__top {
-    // position: fixed;
+    position: fixed;
     z-index: 50;
     left: 0;
     top: 0;
@@ -292,6 +292,9 @@
     }
     &__top {
       padding: 20px 70px;
+      &-wrapper {
+        min-height: 130px;
+      }
       &-inner {
         order: -1;
         max-width: 315px;
@@ -350,6 +353,8 @@
   .header {
     &__top {
       padding-left: 137px;
+      position: static;
+      box-shadow: none;
     }
     &__title {
       padding-right: 80px;
